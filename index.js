@@ -16,6 +16,13 @@ module.exports = {
             2,
             "never"
         ],
+        "no-unused-vars": [
+            2,
+            {
+                "vars": "all",
+                "args": "none"
+            }
+        ],
         "react/jsx-uses-react": 1
     },
     "env": {
