@@ -38,6 +38,7 @@ module.exports = {
 		"react/react-in-jsx-scope": 2,
 		"react/no-deprecated": 2,
 		"react/no-direct-mutation-state": 2,
-		"react/jsx-no-duplicate-props": 2
+		"react/jsx-no-duplicate-props": 2,
+		"react/require-render-return": 1
 	}
 }
