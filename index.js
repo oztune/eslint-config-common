@@ -23,22 +23,23 @@ module.exports = {
 	"parser": "babel-eslint",	
 	"plugins": ["react"],
 	"rules": {
-		"indent": [2, "tab"],
-		"quotes": [2, "single"],
-		"linebreak-style": [2, "unix"],
-		"semi": [2, "never"],
-		"no-unused-vars": [2,
+		"indent": ["error", "tab"],
+		"quotes": ["error", "single"],
+		"linebreak-style": ["error", "unix"],
+		"semi": ["error", "never"],
+		"no-unused-vars": ["warn",
 			{
 				"vars": "all",
 				"args": "none"
 			}
 		],
-		"react/jsx-uses-react": 2,
-		"react/jsx-no-undef": 2,
-		"react/react-in-jsx-scope": 2,
-		"react/no-deprecated": 2,
-		"react/no-direct-mutation-state": 2,
-		"react/jsx-no-duplicate-props": 2,
-		"react/require-render-return": 1
+		"react/jsx-uses-react": "error",
+		"react/jsx-uses-vars": "error",
+		"react/jsx-no-undef": "error",
+		"react/react-in-jsx-scope": "error",
+		"react/no-deprecated": "error",
+		"react/no-direct-mutation-state": "error",
+		"react/jsx-no-duplicate-props": "error",
+		"react/require-render-return": "warn"
 	}
 }
