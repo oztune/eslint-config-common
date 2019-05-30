@@ -16,11 +16,11 @@ module.exports = {
 	"settings": {
 		"react": {
 			"pragma": "React",
-			"version": "15.0"
+			"version": "16.0"
 		}
 	},
 	"parser": "babel-eslint",	
-	"plugins": ["react"],
+	"plugins": ["react", "react-hooks"],
 	"rules": {
 		"indent": ["error", "tab"],
 		"quotes": ["error", "single"],
@@ -39,6 +39,8 @@ module.exports = {
 		"react/no-deprecated": "error",
 		"react/no-direct-mutation-state": "error",
 		"react/jsx-no-duplicate-props": "error",
-		"react/require-render-return": "warn"
+		"react/require-render-return": "warn",
+		"react-hooks/rules-of-hooks": "error",
+    	"react-hooks/exhaustive-deps": "warn"
 	}
 }
