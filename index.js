@@ -1,5 +1,32 @@
 module.exports = {
 	"extends": "eslint:recommended",
+	// This is inspired by:
+	// - https://github.com/babel/babel-eslint/issues/663#issuecomment-519855344
+	// - https://github.com/facebook/create-react-app/blob/master/packages/eslint-config-react-app/index.js#L55
+	overrides: [
+		{
+			files: ["**/*.ts", "**/*.tsx"],
+			parser: "@typescript-eslint/parser",
+			parserOptions: {
+				ecmaVersion: 2018,
+				sourceType: 'module',
+				ecmaFeatures: {
+				  jsx: true,
+				},
+				// typescript-eslint specific options
+				warnOnUnsupportedTypeScriptVersion: true,
+			},
+			plugins: ["@typescript-eslint"],
+			// If adding a typescript-eslint version of an existing ESLint rule,
+			// make sure to disable the ESLint rule here.
+			rules: {
+				'default-case': 'off',
+				'no-dupe-class-members': 'off',
+				'no-undef': 'off',
+				'no-unused-vars': 'off'
+			}
+		}
+	],
 	"env": {
 		"es6": true,
 		"node": true,

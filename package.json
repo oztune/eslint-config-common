@@ -7,9 +7,10 @@
     "@typescript-eslint/eslint-plugin": "^2.7.0",
     "@typescript-eslint/parser": "^2.7.0",
     "babel-eslint": "^10.0.1",
-    "eslint": "^v6.0.0-alpha.2",
+    "eslint": "^v6.6.0",
     "eslint-plugin-react": "^7.13.0",
-    "eslint-plugin-react-hooks": "^1.6.0"
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "typescript": "^3.7.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
