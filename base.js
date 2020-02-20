@@ -59,6 +59,9 @@ module.exports = {
 				"args": "none"
 			}
 		],
+		"no-console": ["error", {
+			"allow": ["warn", "error"]
+		}],
 		"react/jsx-uses-react": "error",
 		"react/jsx-uses-vars": "error",
 		"react/jsx-no-undef": "error",
@@ -68,6 +71,6 @@ module.exports = {
 		"react/jsx-no-duplicate-props": "error",
 		"react/require-render-return": "warn",
 		"react-hooks/rules-of-hooks": "error",
-    	"react-hooks/exhaustive-deps": "warn"
+		"react-hooks/exhaustive-deps": "warn"
 	}
 }
