@@ -72,7 +72,7 @@ module.exports = {
 		"react/require-render-return": "warn",
 		"react-hooks/rules-of-hooks": "error",
 		"react-hooks/exhaustive-deps": "warn",
-		"no-restricted-imports": ["error", { "patterns": ["lodash$"] }]
+		"no-restricted-imports": ["error", { "patterns": ["lodash$"] }],
 		"no-restricted-syntax": [
 			"error",
 			{
