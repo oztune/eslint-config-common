@@ -76,6 +76,8 @@ module.exports = {
 		"no-restricted-syntax": [
 			"error",
 			{
+				//Inspired by https://github.com/eslint/eslint/issues/12868#issuecomment-581515841
+				//In the future, if someone puts together an eslint rule for this, we should opt for that instead.
 				selector:
 					"CallExpression[arguments.length=1] > MemberExpression.callee > Identifier.property[name='reduce']",
 				message: "You must provide an initialValue to .reduce() to avoid catastrophic failure when the reduced array is empty.",
