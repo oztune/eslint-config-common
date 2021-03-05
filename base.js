@@ -73,5 +73,13 @@ module.exports = {
 		"react-hooks/rules-of-hooks": "error",
 		"react-hooks/exhaustive-deps": "warn",
 		"no-restricted-imports": ["error", { "patterns": ["lodash$"] }]
+		"no-restricted-syntax": [
+			"error",
+			{
+				selector:
+					"CallExpression[arguments.length=1] > MemberExpression.callee > Identifier.property[name='reduce']",
+				message: "You must provide an initialValue to .reduce() to avoid catastrophic failure when the reduced array is empty.",
+			},
+		],
 	}
 }
