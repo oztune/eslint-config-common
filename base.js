@@ -72,6 +72,16 @@ module.exports = {
 		"react/require-render-return": "warn",
 		"react-hooks/rules-of-hooks": "error",
 		"react-hooks/exhaustive-deps": "warn",
-		"no-restricted-imports": ["error", { "patterns": ["lodash$"] }]
+		"no-restricted-imports": ["error", { "patterns": ["lodash$"] }],
+		"no-restricted-syntax": [
+			"error",
+			{
+				//Inspired by https://github.com/eslint/eslint/issues/12868#issuecomment-581515841
+				//In the future, if someone puts together an eslint rule for this, we should opt for that instead.
+				selector:
+					"CallExpression[arguments.length=1] > MemberExpression.callee > Identifier.property[name='reduce']",
+				message: "You must provide an initialValue to .reduce() to avoid catastrophic failure when the reduced array is empty.",
+			},
+		],
 	}
 }
