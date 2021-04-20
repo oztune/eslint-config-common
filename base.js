@@ -62,6 +62,7 @@ module.exports = {
 		"no-console": ["error", {
 			"allow": ["warn", "error"]
 		}],
+		"radix": ["error"],
 		"react/jsx-uses-react": "error",
 		"react/jsx-uses-vars": "error",
 		"react/jsx-no-undef": "error",
