@@ -23,13 +23,7 @@ module.exports = {
 				'default-case': 'off',
 				'no-dupe-class-members': 'off',
 				'no-undef': 'off',
-				'no-unused-vars': 'off',
-				"@typescript-eslint/ban-ts-comment": [1, { 
-					/** We should look into upgrading typescript-eslint.
-					 * When we do so, we should change the value here to 'allow-with-description'
-					 */
-					'ts-ignore': true
-				}]
+				'no-unused-vars': 'off'
 			}
 		}
 	],
