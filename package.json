@@ -9,6 +9,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^v6.6.0",
     "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-lodash": "^7.2.0",
     "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-react-hooks": "^1.6.0",
     "typescript": "^3.7.2"
@@ -17,8 +18,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "eslint-plugin-lodash": "^7.2.0"
-  }
+  "license": "ISC"
 }
