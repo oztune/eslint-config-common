@@ -47,7 +47,7 @@ module.exports = {
 		}
 	},
 	"parser": "babel-eslint",	
-	"plugins": ["react", "react-hooks"],
+	"plugins": ["react", "react-hooks", "lodash"],
 	"rules": {
 		"indent": ["warn", "tab"],
 		"quotes": ["error", "single"],
@@ -73,7 +73,7 @@ module.exports = {
 		"react/require-render-return": "warn",
 		"react-hooks/rules-of-hooks": "error",
 		"react-hooks/exhaustive-deps": "warn",
-		"no-restricted-imports": ["error", { "patterns": ["lodash$"] }],
+		"lodash/import-scope": [2, "method"],
 		"no-restricted-syntax": [
 			"error",
 			{
