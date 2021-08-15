@@ -43,7 +43,7 @@ module.exports = {
 	"settings": {
 		"react": {
 			"pragma": "React",
-			"version": "16.0"
+			"version": "17.0"
 		}
 	},
 	"parser": "babel-eslint",	
@@ -63,10 +63,10 @@ module.exports = {
 			"allow": ["warn", "error"]
 		}],
 		"radix": ["error"],
-		"react/jsx-uses-react": "error",
+		"react/jsx-uses-react": "off",
 		"react/jsx-uses-vars": "error",
 		"react/jsx-no-undef": "error",
-		"react/react-in-jsx-scope": "error",
+		"react/react-in-jsx-scope": "off",
 		"react/no-deprecated": "error",
 		"react/no-direct-mutation-state": "error",
 		"react/jsx-no-duplicate-props": "error",
